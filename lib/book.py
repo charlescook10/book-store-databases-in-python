@@ -5,6 +5,9 @@ class Book:
         self.author_name = author_name
     
     def __repr__(self):
+        return f"Book({self.id}, {self.title}, {self.author_name})"
+    
+    def __str__(self):
         return f"{self.id} - {self.title} - {self.author_name}"
     
     def __eq__(self, value):
